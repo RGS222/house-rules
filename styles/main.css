@@ -1,0 +1,66 @@
+body {
+    background-image: url('../assets/images/bkgd.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Stretches the image to cover the screen */
+    margin: 0;
+    padding: 40px;
+    width: 100vw;
+}
+p {
+    color: white;
+    font-size: clamp(1.0rem, 1.5vw, 2.5rem);
+}
+
+h1,
+h2,
+li {
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    color: white;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: clamp(2rem, 2.7vw, 4.5rem);
+}
+
+h2,
+li {
+    color: wheat; /* rgb(248, 130, 150); */
+    font-weight: 600;
+    font-size: clamp(1.2rem, calc(1.7vw + 0rem), 2.5rem);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 80vw;
+}
+
+li::marker {
+    color: #ff4500;
+    /* Set your custom color */
+    font-size: 1.5rem;
+    /* Scale the bullet size up or down */
+}
+
+a {
+    color: white
+}
+
+.diagram {
+    width: clamp(28rem, 40vw, 40rem);
+    border: 3px white solid;
+    margin-top: 35px;
+    margin-left: 35px;
+}
+
+#check-in-details {
+    display: flex;
+    flex-direction: column;
+    max-width: 85vw;
+}
+
+@media (min-width: 1000px) {
+    #check-in-details {
+        flex-direction: row;
+    }
+}
