@@ -1,0 +1,49 @@
+
+label {
+    color: white;
+}
+
+.pure-group input,
+.pure-group textarea {
+    font-family: inherit;
+    width: 40%;
+    min-width: 200px;
+    max-width: 400px;
+}
+
+.button-success {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.honeypot-field {
+    display: none;
+}
+
+#message-fields {
+    display: flex;
+    justify-content: center;
+}
+
+#message-fields>div {
+    width: clamp(300px, 50vw, 700px);
+}
+
+#message-fields fieldset {
+    width: 100vw;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    width: clamp(10rem, 16vw, 25rem);
+    height: clamp(5rem, 8vw, 12.5rem);
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid;
+}
